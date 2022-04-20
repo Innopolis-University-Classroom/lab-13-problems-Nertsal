@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Playstation {
     private List<Observer<Game>> mObservers;
 
@@ -6,7 +9,7 @@ public class Playstation {
     }
 
     public void subscribe(Observer<Game> subscriber) {
-        this.mObservers.add(subsriber);
+        this.mObservers.add(subscriber);
     }
 
     public void notify(Game game) {

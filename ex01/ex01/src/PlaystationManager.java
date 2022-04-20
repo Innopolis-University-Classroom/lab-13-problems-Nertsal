@@ -1,5 +1,6 @@
+import java.util.Scanner;
+
 public class PlaystationManager {
-    private Scanner scanner;
     private Playstation playstation;
 
     public PlaystationManager() {
@@ -11,6 +12,6 @@ public class PlaystationManager {
     }
 
     public void subscribe(Observer<Game> subscriber) {
-        this.playstation.subcribe(subscriber);
+        this.playstation.subscribe(subscriber);
     }
 }
